@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Online Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">ShopEasy</div>
+    <input type="text" class="search-bar" placeholder="Search for products...">
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Account</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="banner">
+    <h1>Welcome to ShopEasy</h1>
+    <p>Discover Amazing Deals Every Day!</p>
+</section>
+
+<section class="featured">
+    <h2>Deal of the Day</h2>
+    <div class="deal">
+        <img src="images/laptop.jpg" alt="Laptop">
+        <div class="deal-info">
+            <h3>UltraSlim Laptop</h3>
+            <p>Powerful performance for work and play.</p>
+            <p class="price">$799.99 <span class="original-price">$999.99</span></p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<section class="product-grid">
+    <h2>Top Products</h2>
+    <div class="products">
+        <div class="product">
+            <img src="images/shoes.jpg" alt="Running red Shoes">
+            <h4>Running Shoes</h4>
+            <p class="price">$49.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="images/headphones.jpg" alt="Perfume">
+            <h4>Perfume</h4>
+            <p class="price">$59.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="images/smartwatch.jpg" alt="Iphone 14">
+            <h4>Iphone 14</h4>
+            <p class="price">$99.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="images/backpack.jpg" alt="headphone">
+            <h4>headphone</h4>
+            <p class="price">$39.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-links">
+        <a href="#">Customer Service</a>
+        <a href="#">Returns</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+    </div>
+    <p>&copy; 2025 ShopEasy. All rights reserved.</p>
+</footer>
+
+<!-- Floating Chat Button -->
+<div class="chatbot-toggle-button" onclick="toggleChatbot()">💬 Chat with Us</div>
+
+<!-- Chatbot Container (Initially Hidden) -->
+<div class="chatbot-container" id="chatbotContainer" style="display: none;">
+    <div class="chatbot-header">
+        Chat with ShopEasy AI
+        <button class="close-chatbot" onclick="toggleChatbot()">✖</button>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages"></div>
+    <div class="chatbot-input">
+        <input type="text" id="chatbotInput" placeholder="Ask me about products...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<!-- Link chatbot.js (only once) -->
+<script src="chatbot.js"></script>
+
+
+</body>
+</html>
